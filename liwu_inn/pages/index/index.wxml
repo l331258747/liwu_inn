@@ -1,0 +1,9 @@
+<!--index.wxml-->
+
+<view class="page">
+  
+  <image class="background" src="../../image/index1.jpg"  mode="aspectFill" />
+
+  <view class='titleName'>礼物民宿</view>
+  <button class="btn">进入</button>
+</view>
