@@ -1,4 +1,4 @@
-// pages/index/logs.js
+// pages/my/my.js
 Page({
 
   /**

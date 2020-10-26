@@ -1,0 +1,13 @@
+<!--pages/inn/inn.wxml-->
+<view class="page">
+
+  <view wx:for="{{data1}}" wx:for-item="item" wx:key="id" >
+    <image src="{{item.img}}" mode="widthFix">
+    
+    </image>
+
+    <view >{{item.title}}</view>
+
+  </view>
+
+</view>

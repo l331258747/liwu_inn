@@ -1,13 +1,42 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/spot/spot",
+    "pages/inn/inn",
+    "pages/my/my",
+    "pages/home/home"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "礼物民宿",
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/inn/inn",
+        "text": "房间",
+        "iconPath": "image/home_room_un.png",
+        "selectedIconPath": "image/home_room.png"
+      },
+      {
+        "pagePath": "pages/spot/spot",
+        "text": "景点",
+        "iconPath": "image/home_port_un.png",
+        "selectedIconPath": "image/home_port.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "联系",
+        "iconPath": "image/home_customer_un.png",
+        "selectedIconPath": "image/home_customer.png"
+      }
+    ]
+  }
+
+  
 }
