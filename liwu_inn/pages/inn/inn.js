@@ -5,9 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-    data1: [],
-    image: "",
-    title: "",
+    data1: [
+      { id: 0, img: "/image/index1.jpg", title: "公共区域" },
+      { id: 11, img: "/image/index1.jpg", title: "花月·1楼·情侣房" },
+      { id: 12, img: "/image/index2.jpg", title: "新月·1楼·亲子房" },
+      { id: 21, img: "/image/index2.jpg", title: "初夏·2楼·情侣房" },
+      { id: 22, img: "/image/index2.jpg", title: "季夏·2楼·大床房" },
+      { id: 23, img: "/image/index2.jpg", title: "仲夏·2楼·大床房" },
+      { id: 24, img: "/image/index1.jpg", title: "新秋·2楼·亲子房" },
+      { id: 31, img: "/image/index1.jpg", title: "仲秋·3楼·情侣房" },
+      { id: 32, img: "/image/index1.jpg", title: "露月·3楼·大床房" },
+      { id: 33, img: "/image/index2.jpg", title: "霜序·3楼·大床房" },
+      { id: 34, img: "/image/index1.jpg", title: "葭月·3楼·亲子房" },
+      { id: 41, img: "/image/index2.jpg", title: "嘉平·4楼·3床房" }
+    ],
+  },
+
+  //事件处理函数
+  cardClick: function (e) {
+    var id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: 'innDetail/innDetail?id=' + id
+
+    })
   },
 
   /**
@@ -15,12 +35,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      data1: [
-        { "img": "/image/index1.jpg", "title": "露月" },
-        { "img": "/image/index2.jpg", "title": "仲夏" }
-      ],
-      image: "/image/index1.jpg",
-      title: "title",
+
     });
   },
 
