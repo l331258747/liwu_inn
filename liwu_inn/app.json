@@ -6,7 +6,8 @@
     "pages/my/my",
     "pages/home/home",
     "pages/inn/innDetail/innDetail",
-    "pages/showImgs/showImgs"
+    "pages/showImgs/showImgs",
+    "pages/spot/spotDetail/spotDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

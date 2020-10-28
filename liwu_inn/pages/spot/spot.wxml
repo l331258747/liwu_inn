@@ -1,2 +1,13 @@
-<!--pages/spot/spot.wxml-->
-<text>pages/spot/spot.wxml</text>
+<!--pages/inn/inn.wxml-->
+<view class="page">
+
+<view bindtap="cardClick" class="card" wx:for="{{data1}}" wx:for-item="item" wx:key="id" data-id="{{item.id}}">
+  <image class="image" src="{{item.img}}" mode="aspectFill">
+
+  </image>
+
+  <view class="title">{{item.title}}</view>
+
+</view>
+
+</view>
