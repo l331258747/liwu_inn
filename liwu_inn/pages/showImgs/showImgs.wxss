@@ -1,0 +1,14 @@
+/* pages/showImgs/showImgs.wxss */
+
+.u-wrp-bnr {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  position: fixed;
+  background-size: 100% 100%;
+}
+
+.u-img-slide {
+  width: 100%;
+  height: inherit;
+}

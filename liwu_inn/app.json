@@ -5,7 +5,8 @@
     "pages/inn/inn",
     "pages/my/my",
     "pages/home/home",
-    "pages/inn/innDetail/innDetail"
+    "pages/inn/innDetail/innDetail",
+    "pages/showImgs/showImgs"
   ],
   "window": {
     "backgroundTextStyle": "light",

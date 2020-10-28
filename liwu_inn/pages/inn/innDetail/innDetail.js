@@ -28,23 +28,26 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("onLoad");
     var id = options.id
-    this.data.data = this.getData(id);
-    if(this.data.data){
-      console.log("数据不为空");
-    }else{
-      console.log("数据为空");
-    }
+    this.setData({
+      item: this.getData(id),
+    });
   },
 
   getData: function (id) {
     for (var i = 0; i < this.data.data1.length; i++) {
-      if(this.data.data1[i].id == id){
+      if (this.data.data1[i].id == id) {
         return this.data.data1[i];
       }
     }
     return null;
+  },
+
+  imgClick: function () {
+    var list = JSON.stringify(this.data.item.imgs);
+    wx.navigateTo({
+      url: '../../showImgs/showImgs?imgs=' + list 
+    })
   },
 
   /**

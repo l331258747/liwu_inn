@@ -1,6 +1,6 @@
 <!--index.wxml-->
 
-<view class="page">
+<view class="page" catchtouchmove="noneEnoughPeople">
   
   <image class="background" src="/image/index1.jpg"  mode="aspectFill" />
 

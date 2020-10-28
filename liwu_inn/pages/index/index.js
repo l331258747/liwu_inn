@@ -16,6 +16,12 @@ Page({
       
     })
   },
+
+  noneEnoughPeople:function(){
+    //处理页面上下滑动
+  },
+
+  
   
   onLoad: function () {
     

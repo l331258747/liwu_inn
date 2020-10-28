@@ -1,10 +1,15 @@
 <!--pages/inn/innDetail/innDetail.wxml-->
 <view class="page">
   <image class="img" src="{{item.img}}" mode="aspectFill" bindtap="imgClick" data-img="{{item.imgs}}"></image>
-  <view class="title">{{item.title}}</view>
 
-  <view class="describe" wx:for="{{item.describe}}" wx:key="id" wx:for-item="item">
-    <text>{{item}}</text>
+  <view style="margin: 10rpx 10rpx 10rpx 10rpx;">
+
+    <view class="title">{{item.title}}</view>
+
+    <view class='gridview'>
+      <view class="gridview-item" wx:for="{{item.describe}}" wx:key="id" wx:for-item="item">
+        <text>{{item}}</text>
+      </view>
+    </view>
   </view>
-
 </view>
