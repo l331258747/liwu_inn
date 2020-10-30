@@ -19,6 +19,10 @@
   margin: 10rpx 0rpx 10rpx 0rpx;
 }
 
+.strategy{
+  margin-top: 10px;
+}
+
 .gridview-item {
   margin: 2%;
   float: left;
