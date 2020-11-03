@@ -2,10 +2,28 @@
 <view class="page">
 
 
-  <view>微信号：liwu13342555120</view>
+  <view class="rqCode">
+    <text>微信号：liwu13342555120</text>
+    <button bindtap="rqCodeClick" class="rqCode_btn" type="primary" size="mini">复制</button>
 
-  
+  </view>
 
-  <view>电话：13342555120</view>
+  <view class="phone">
+
+    <text>电话：13342555120</text>
+
+    <button bindtap="phoneClick" class="phone_btn" type="primary" size="mini">呼叫</button>
+
+  </view>
+
+
+  <view bindtap="cardClick" class="card" wx:for="{{data1}}" wx:for-item="item" wx:key="id" data-id="{{item.id}}">
+    <image class="image" src="{{item.img}}" mode="aspectFill">
+
+    </image>
+
+    <view class="title">{{item.title}}</view>
+
+  </view>
 
 </view>
